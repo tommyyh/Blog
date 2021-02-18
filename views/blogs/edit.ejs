@@ -1,0 +1,14 @@
+<h1>New Article</h1>
+<form action="/articles/<%= article.id %>?_method=PUT" method="POST">
+  <div>
+    <input type="text" name="title" placeholder="Title" value="<%= article.title %>">
+  </div>
+  <div>
+    <input type="text" name="description" placeholder="Description" value="<%= article.description %>">
+  </div>
+  <div>
+    <textarea name="text" cols="30" rows="7" placeholder="Text"><%= article.text %></textarea>
+  </div>
+  <button type="submit">Save</button>
+</form>
+<button type="button"><a href="/articles">Cancel</a></button>

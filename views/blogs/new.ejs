@@ -1,0 +1,14 @@
+<h1>New Article</h1>
+<form action="/articles/new" method="POST">
+  <div>
+    <input type="text" name="title" placeholder="Title" required>
+  </div>
+  <div>
+    <input type="text" name="description" placeholder="Description">
+  </div>
+  <div>
+    <textarea name="text" cols="30" rows="7" placeholder="Text" required></textarea>
+  </div>
+  <button type="submit">Save</button>
+</form>
+<button type="button"><a href="/articles">Cancel</a></button>
